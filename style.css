@@ -1,0 +1,383 @@
+body {
+    font-family:'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    /*se ajusta lo que es la seccion 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;*/
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+.container {
+    width: 90%; /* Usa un porcentaje para que el contenedor se adapte al tamaño de la pantalla */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 20px; /* Añade relleno para que el contenido no toque los bordes */
+    box-sizing: border-box; /* Asegura que el relleno y el borde se incluyan en el ancho y alto */
+}
+
+
+
+
+header {
+    
+   position: center;
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 0em 0;
+    
+
+}
+header .logo {
+    margin-top: 5px; /*20  Ajusta este valor según tus necesidades */
+}
+
+header .logo img {
+    max-width: 0px; /* Tamaño máximo del logo */
+    width: 10%; /*20vw  El logo ocupa el 20% del ancho de la ventana */
+    min-width: 200px; /* Tamaño mínimo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+/*header .logo {
+ 
+    /*position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*240*/
+    /*z-index: 1;/* Ajusta la distancia desde el borde superior 
+    left: 50%; /* Ajusta la distancia desde el borde izquierdo 
+    transform: translate(-50%, -240%);
+    z-index: 1; /* Asegura que el logo esté encima de la imagen*/
+    /*max-width: 180px; /* Tamaño máximo del logo */
+    /*width: 20vw; /* 20vwEl logo ocupa el 20% del ancho de la ventana *
+    min-width: 100px; /* Tamaño mínimo del logo 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+}
+    
+   
+header .logo img {
+   /* width: 167px;  /*300Ajusta el tamaño del logo según tus necesidades */
+   /*width: 210px;  /* Ajusta el tamaño del logo según tus necesidades */
+  /* max-width: 100%; /* Asegura que el logo se ajuste al tamaño de la pantalla */
+   /*height: auto; /* Mantiene la proporción del logo 
+
+}*/
+
+nav {
+    /*se cambio
+    width: 100%;
+    background-color: rgb(9, 9, 103);
+    /*padding: 1em;*/
+    /*padding: 1em 0;
+    display: flex;
+    justify-content: center;*/
+
+    /*original*/
+    background-color: rgb(255, 0, 0);
+    padding: 1em;
+
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /*none*/
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    /*cambiar o se cambio*/
+    /*width: 80%;
+    padding: 2em;
+    border-bottom: 2px solid white;*/
+    
+    /*orginal 2 4 
+    padding: 0em 5;
+    border-bottom: 2px solid blue;
+    */
+   /* margin-left: 30px;  /*Deja espacio para el nav */
+    padding: 2em ;
+    border-bottom: 2px solid white;
+    
+    /*cambio width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+    border-bottom: 2px solid blue;*/
+}
+
+h2 {
+    color: rgb(35, 0, 233);
+    font-weight: 600;
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 0; /* Elimina el margen superior por defecto */
+    margin-bottom: 20px; /* Agrega un margen inferior para separación */
+    
+}
+
+.photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*10 0em 0*/
+    gap: 10px;
+    padding:  0em 0;
+}
+
+.photo-album img {
+    
+    width: 30%; /* Establece que cada imagen ocupe el 30% del ancho del contenedor */
+    margin: 0%; /* Elimina cualquier margen alrededor de las imágenes */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Aplica una sombra ligera alrededor de las imágenes */
+    border-radius: 5px; /* Redondea las esquinas de las imágenes */
+
+    /*width: calc(30%  - 20px);  Ajuste del ancho considerando el espacio entre las imágenes 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;*/
+}
+
+h3 {
+    color:rgb(1, 0, 33);
+    font-weight: 600;
+}
+
+.category {
+    margin-bottom: 2em;
+}
+
+#mapa {
+
+   
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    max-width: 80%;*/
+    
+    
+    /*PPPPPPPdisplay: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 80%;
+  margin: 0%; /* Centrar el contenedor */
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Reduce el espacio entre los elementos */
+  max-width: 80%;
+  margin: 9 auto; /* 10Centra el contenedor */
+
+    
+
+}
+#mapa p {
+    margin: 0; /* Elimina el margen de los párrafos para que estén más cerca de los mapas */
+}
+
+#mapa iframe {
+    /*border: 0;*/
+    border: 0;
+  width: 100%; /* Asegura que el iframe ocupe todo el ancho del contenedor */
+  height: 400px; /* Ajusta la altura según sea necesario */
+  max-width: 100%; /* Asegura que el iframe no exceda el contenedor */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el cálculo del ancho y alto */
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+    color: rgb(0, 255, 38);
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+   
+}
+
+
+#contacto li {
+    margin: 10px 0 ;/* 0 Espacio entre cada elemento li */
+
+}
+
+#contacto li a {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: black; /* Color de texto general */
+    transition: color 0.3s ease;
+}
+
+#contacto li a:hover {
+    color: #2f00ff; /* Color de texto al pasar el mouse */
+}
+
+#contacto li i {
+    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 10px;
+}
+
+/* Estilos específicos para cada ícono */
+.facebook-icon {
+    color: #3b5998;
+}
+
+.whatsapp-icon {
+    color: #25d366;
+}
+
+.instagram-icon {
+    color: #e4405f;
+}
+
+.tiktok-icon {
+    color: #010101;
+}
+
+.gmail-icon {
+    color: #ea4335;
+}
+
+
+
+.logo-pequeno {
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: flex; /* Usa flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+
+footer {
+    background-color: rgb(255, 0, 0);
+    color: rgb(242, 242, 242);
+    text-align: left; /* right Esto alinea el texto a la derecha */
+    padding:10px 20px;
+    
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .custom-line {
+    border: none;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    margin: 10px 0 0;
+}
+
+
+.main-image {
+    
+    margin-top: 0px; /*20 Espacio entre el encabezado y la imagen principal */
+}
+
+.main-image img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    display: block;
+  
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    /*20*/
+    bottom:     15px;
+    right: 2px;
+    background-color: #1e00ff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top i {
+    font-size: 20px;
+}
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) { /*768*/
+    .container {
+        width: 100%; /* Ajusta el ancho para pantallas aún más pequeñas */
+        padding: 0 10px; /* Reduce el relleno en dispositivos pequeños */
+    }
+    
+   /*header .logo img {
+    width: 120px; /*120px Ajusta el tamaño del logo para móviles 
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+        left: 50%;
+        transform: translate(-50%, -450%);
+   
+}*/
+    .top-bar {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        /*flex-direction: row*/
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        /*margin: 10px 0;*/
+        margin: 1px 0;
+    }
+    .main-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .back-to-top {
+        display: block;
+    }
+
+#mapa iframe {
+    height: 300px; /* Ajusta la altura para dispositivos más pequeños */
+  }
+}
+
+
+
